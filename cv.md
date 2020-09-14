@@ -5,4 +5,5 @@ and now I really want to complete this course successfully.</h3>
 <h4>HTML 5, CSS, JS begginer.</h4>
 _No work experience yet_
 <h4>geek brain's courses. rs school student.</h4>
-Английский язык (уровень английского языка, если была языковая практика, расскажите о ней)
+<h4>
+My level is B1. He began his studies at the institute, practiced music, films, games. I communicated with native speakers while traveling.</h4>
