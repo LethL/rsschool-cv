@@ -1,7 +1,5 @@
-
-/* CSS Document */
-.wrapper{
-	height: 100vh;
-	width: 100vw;
-	background: #8D2E77;
+.avatar{
+	align-content: center;
+	height: 30px;
+	width: 40px;
 }

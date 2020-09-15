@@ -5,12 +5,95 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta charset="utf-8">
 	<title>RESUME</title>
+		
+		<style>
+			body{	
+				background-color: aquamarine;
+			}
+        </style>
 	
 	</head>
 <body>
-	<div class="wrapper"> 
+	<header>
+	<h1>Dmitry Goncharov</h1>
+	</header>
+	<main>
 	
-	</div>
+		<img src="../ava.jpg" alt="my avatar" width="222" height="150">
+	</main>
+	<h3 id="email">Send me letter:</h3>
+	<ul>
+		<li><h4>Email: carribean_08@mail.ru</h4></li>
+		<li><h4>Discord: Leth4L(@lethl)</h4></li>
+	</ul>
+	
+	<h3>About me</h3>
+	<p><em>I'm a student rs school now. I'm just beginner in this way. But i really want to study, and i really like it. I'm used to achieving my goals, and now I really want to complete this course successfully.
+</em></p>
+	
+	<h3>My Skills</h3>
+	<p><b>HTML 5, CSS, JS, Git beginner.</b></p>
+	
+	<h3>Code</h3>
+	<pre>namespace snake1
+
+{
+
+    class Program
+
+    {
+        static void Main(string[] args)
+
+        { 
+
+            Walls walls = new Walls(70, 32);
+            walls.Draw();
+
+            Point p = new Point(4, 5, '*');
+            Snake snake = new Snake(p, 4, Direction.RIGHT);
+            snake.Draw();
+
+            FoodCreator foodCreator = new FoodCreator(71, 15, '$');
+            Point food = foodCreator.CreateFood();
+            food.Draw();
+
+            while (true)
+            {
+                if (walls.IsHit(snake) || snake.IsHitTail())
+                {
+                    break;
+                }
+                if (snake.Eat(food))
+                {
+                    food = foodCreator.CreateFood();
+                    food.Draw();
+                }
+
+                else
+                {
+                    snake.Move();
+                }
+
+                Thread.Sleep(100);
+
+                if(Console.KeyAvailable)
+                {
+                    ConsoleKeyInfo key = Console.ReadKey();
+                    snake.HandleKey(key.Key);
+                }
+            }
+
+        }
+
+    }
+
+}</pre>
+	
+	<h3>Education</h3>
+	<p><b>geek brain's courses. rs school student.</b></p>
+	
+	<h3>English Level</h3>
+	<p><b>My level is B1. He began his studies at the institute, practiced music, films, games. I communicated with native speakers while traveling.</b></p>
 	
 </body>
 
