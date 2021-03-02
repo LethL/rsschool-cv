@@ -109,6 +109,10 @@ body {
     text-align: center;
 }
 
+.nav ul {
+    padding-left: 0;
+}
+
 .nav li {
     margin-bottom: 10px;
     list-style: none;
