@@ -1,3 +1,7 @@
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
 body {
     box-sizing: border-box;
     margin: 0;
@@ -14,7 +18,7 @@ body {
 
 .persone{
     max-width: 35%;
-    height: auto;
+    height: 100vh;
     background-color: #212121;
 }
 
@@ -57,7 +61,7 @@ body {
 
 
 .persone__profile {
-    padding: 50px;
+    padding: 10px 50px;
 }
 
 .profile__title {
@@ -81,11 +85,11 @@ body {
     text-align: center;
 }
 
-.persone__contact {
+.footer {
     padding: 50px;
 }
 
-.contact__title {
+.footer__title {
     padding-bottom: 20px;
 
     font-size: 15px;
@@ -97,18 +101,38 @@ body {
     text-transform: uppercase;  
 }
 
-.contact__mail {
-    font-size: 11px;
+.nav {
+    font-size: 13px;
     letter-spacing: 1px;
-    color: #ffffff;
     font-weight: 300;
     font-family: "Montserrat";
     text-align: center;
 }
 
+.nav li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.nav__item {
+    text-decoration: none;
+    color: #ffffff;
+
+    transition: color .1s linear;
+}
+
+.nav__item:hover {
+    color: #d8ae25;
+}
+
+.nav__logo {
+    max-width: 60px;
+    max-height: 60px;
+}
+
 .bio {
     width: 65%;
-    height: auto;
+    height: 100vh;
 }
 
 .experience {
@@ -146,7 +170,7 @@ body {
 }
 
 .skills {
-    padding: 25px 50px;
+    padding: 10px 50px;
 }
 
 .skills__title {
@@ -163,10 +187,21 @@ body {
 }
 
 .skills__icons {
+    padding-left: 0;
+    margin: 5px 0;
     display: flex;
     justify-content: space-between;
-
+    list-style: none;
     font-size: 40px;
+    cursor: pointer;
+}
+
+.icons__item {
+    transition: color .1s linear;
+}
+
+.icons__item:hover {
+    color: #d8ae25;
 }
 
 .hobbies {
@@ -180,15 +215,17 @@ body {
     font-weight: 700;
     font-family: "Open Sans";
     text-transform: uppercase;
-
     border-bottom: 3px solid #575757;
 
     margin-bottom: 30px;
 }
 
 .hobbies__icons {
+    padding-left: 0;
+    margin: 5px 0;
     display: flex;
     justify-content: space-between;
-
+    list-style: none;
     font-size: 40px;
+    cursor: pointer;
 }
