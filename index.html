@@ -1,93 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="style.css">
-	<title>RESUME</title>
-		
-		
-	
-	</head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Resume</title>
+</head>
+
 <body>
-	<header>
-	<div id="header">Dmitry Goncharov
-		<img src="assets/images/ava.jpg" alt="my avatar" width="222" height="150"></div>
-	</header>
-	
-	<div id="info">	<h3>Send me letter: Email: carribean_08@mail.ru</h3>
-	</div>
-	<h3>About me</h3>
-	<p><em>I'm a student rs school now. I'm just beginner in this way. But i really want to study, and i really like it. I'm used to achieving my goals, and now I really want to complete this course successfully.
-</em></p>
-	
-	<h3>My Skills</h3>
-	<p><b>HTML 5, CSS, JS, Git beginner.</b></p>
-	
-	<h3>Code</h3>
-	<pre>namespace snake1
 
-{
+    <div class="main">
+        <div class="persone">
+            <div class="persone__info">
+                <img class="persone__img" src="assets/img/image .png" alt="avatar">
+                <div class="info__title">Dmitry Goncharov</div>
+                <div class="info__subtitle">Web Developer</div>
+            </div>
 
-    class Program
+            <div class="persone__profile">
+                <div class="profile__title">About me</div>
+                <div class="profile__text">I'm a student rs school now. I'm just beginner in this way. But i really want
+                    to study, and i really like it. I'm used to achieving my goals, and now I really want to complete
+                    this course successfully.
+                </div>
+            </div>
 
-    {
-        static void Main(string[] args)
+            <div class="persone__contact">
+                <div class="contact__title">Contact me</div>
+                <div class="contact__mail">carribean_08@mail.ru</div>
+            </div>
+        </div>
 
-        { 
 
-            Walls walls = new Walls(70, 32);
-            walls.Draw();
 
-            Point p = new Point(4, 5, '*');
-            Snake snake = new Snake(p, 4, Direction.RIGHT);
-            snake.Draw();
+        <div class="bio">
 
-            FoodCreator foodCreator = new FoodCreator(71, 15, '$');
-            Point food = foodCreator.CreateFood();
-            food.Draw();
+            <div class="experience">
+                <div class="experince__title">educating</div>
+                <div class="experience__subtitle">Rolling Scopes School</div>
+                <div class="experience__subtitle">Geek brain's courses</div>
+                <div class="experience__subtitle">Udemy</div>
+            </div>
 
-            while (true)
-            {
-                if (walls.IsHit(snake) || snake.IsHitTail())
-                {
-                    break;
-                }
-                if (snake.Eat(food))
-                {
-                    food = foodCreator.CreateFood();
-                    food.Draw();
-                }
+            <div class="experience">
+                <div class="experince__title">Code Example</div>
+                <pre class="experience__text">
+                    const result = arr.map((answer) => {
+                        return answer.toLocaleLowerCase();
+                    });
+                </pre>
+            </div>
 
-                else
-                {
-                    snake.Move();
-                }
+            <div class="experience">
+                <div class="experince__title">English Level</div>
+                <div class="experience__text">
+                    My level is B1. Its began his studies at the institute, practiced music, films, games. I communicated
+                    with native speakers while traveling.
+                </div>
+            </div>
 
-                Thread.Sleep(100);
+            <div class="skills">
+                <div class="skills__title">Skills</div>
+                <div class="skills__icons">
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3"></i>
+                    <i class="fab fa-js-square"></i>
+                    <i class="fab fa-github"></i>
+                </div>
+            </div>
 
-                if(Console.KeyAvailable)
-                {
-                    ConsoleKeyInfo key = Console.ReadKey();
-                    snake.HandleKey(key.Key);
-                }
-            }
+            <div class="hobbies">
+                <div class="hobbies__title">Hobbies & Interest</div>
+                <div class="hobbies__icons">
+                    <i class="fas fa-music"></i>
+                    <i class="fas fa-video"></i>
+                    <i class="far fa-futbol"></i>
+                    <i class="fas fa-plane"></i>
+                </div>
+            </div>
+        </div>
 
-        }
+    </div>
 
-    }
-
-}</pre>
-	
-	<h3>Education</h3>
-	<p><b>geek brain's courses. rs school student.</b></p>
-	
-	<h3>English Level</h3>
-	<p><b>My level is B1. He began his studies at the institute, practiced music, films, games. I communicated with native speakers while traveling.</b></p>
-	
 </body>
-	
-
 
 </html>

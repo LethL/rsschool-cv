@@ -1,0 +1,194 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+}
+
+.main {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.persone{
+    max-width: 35%;
+    height: auto;
+    background-color: #212121;
+}
+
+.persone__info {
+    padding: 50px;
+}
+
+.persone__img {
+    max-width: 200px;
+    max-height: 200px;
+    margin: 0 auto;
+    display: block;
+    
+}
+
+.info__title {
+    padding: 10px 0;
+
+    font-size: 45px;
+    font-family: "Open Sans";
+    letter-spacing: 2px;
+
+    color: #fff;
+    font-weight: 600;
+    
+    text-align: center;
+}
+
+.info__subtitle {
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Open Sans";
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+
+.persone__profile {
+    padding: 50px;
+}
+
+.profile__title {
+    padding-bottom: 20px;
+
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Montserrat";
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.profile__text {
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+.persone__contact {
+    padding: 50px;
+}
+
+.contact__title {
+    padding-bottom: 20px;
+
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Montserrat";
+    text-align: center;
+    text-transform: uppercase;  
+}
+
+.contact__mail {
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+.bio {
+    width: 65%;
+    height: auto;
+}
+
+.experience {
+    padding: 25px 50px;
+}
+
+.experince__title {
+    margin-bottom: 20px;
+
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Open Sans";
+    text-transform: uppercase;
+
+    border-bottom: 3px solid #575757;
+}
+
+.experience__subtitle {
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #2a2a2a;
+    font-weight: 600;
+    font-family: "Open Sans";
+    text-transform: uppercase;
+}
+
+.experience__text {
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #2a2a2a;
+    font-weight: 400;
+    font-family: "Open Sans";
+}
+
+.skills {
+    padding: 25px 50px;
+}
+
+.skills__title {
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Open Sans";
+    text-transform: uppercase;
+
+    border-bottom: 3px solid #575757;
+
+    margin-bottom: 30px;
+}
+
+.skills__icons {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 40px;
+}
+
+.hobbies {
+    padding: 25px 50px;
+}
+
+.hobbies__title {
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Open Sans";
+    text-transform: uppercase;
+
+    border-bottom: 3px solid #575757;
+
+    margin-bottom: 30px;
+}
+
+.hobbies__icons {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 40px;
+}
