@@ -9,10 +9,14 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <title>Resume</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body>
     <header class="header">
+        <h1 class="header__title">Dmitry Goncharov / Resume</h1>
         <ul class="header__nav">
             <li>
                 <a class="header__nav-item" href="#contacts">contacts</a>
@@ -75,11 +79,13 @@
 
             <section id="example" class="section">
                 <h2 class="section__title">Code Example</h2>
-                <pre class="section__text">
+                <pre class="section__text section__text--code"><code class="hljs javascript">
                     function createPhoneNumber(numbers) {
-                        let x = numbers.join('');
-                        return '(' + x.slice(0, 3) + ') ' + x.slice(3, 6) + '-' + x.slice(6, x.length)
-                      }
+                        let x = numbers.join('')
+                        return '(' + x.slice(0, 3) + ') ' 
+                        + x.slice(3, 6) + '-' 
+                        + x.slice(6, x.length)
+                    }</code>
                 </pre>
             </section>
 
@@ -142,7 +148,7 @@
     <footer class="footer">
         <a class="footer__link" target="_blank" href="https://rs.school/js/"><img class="nav__logo"
         src="assets/img/rss_logo.svg" alt="logo"></a>
-        <nav>
+        <nav class="footer__nav">
             <ul class="contacts__nav">
                 <p class="section__text">2021 Dmitry Goncharov</p>
                 <li class="contacts__li"><a class="nav__item" href="#"><i class="fas fa-envelope"></i></a></li>

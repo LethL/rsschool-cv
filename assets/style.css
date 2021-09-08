@@ -20,19 +20,27 @@ body {
     height: 60px;
     background-color: rgba(255,255,255, 0.4);
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
+.header__title {
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+    text-align: center;
+}
+
 .header__nav {
-    width: 80%;
+    width: 45%;
     display: flex;
     justify-content: space-around;
     list-style: none;
 }
 
 .header__nav-item {
-    font-size: 18px;
+    font-family: 'Montserrat';
+    font-size: 15px;
     cursor: pointer;
     color: #000000;
     text-decoration: none;
@@ -128,6 +136,7 @@ body {
     text-transform: uppercase;
     color: #d13b60;
     transition: all .2s linear;
+    text-align: center;
 }
 
 .profile__link:hover {
@@ -135,7 +144,7 @@ body {
 }
 
 .contacts {
-    padding: 50px;
+    margin: 50px;
 }
 
 .contacts__title {
@@ -183,7 +192,7 @@ body {
 }
 
 .section {
-    padding: 25px 50px;
+    margin: 25px 50px;
 }
 
 .section__title {
@@ -192,7 +201,7 @@ body {
     letter-spacing: 2px;
     color: #000000;
     font-weight: 700;
-    font-family: "Open Sans";
+    font-family: 'Montserrat';
     text-transform: uppercase;
     border-bottom: 3px solid #575757;
 }
@@ -213,6 +222,11 @@ body {
     color: #2a2a2a;
     font-weight: 400;
     font-family: "Open Sans";
+    position: relative;
+}
+
+.section__text--code {
+    height: 100px;
 }
 
 .section__icons {
@@ -257,7 +271,11 @@ body {
 }
 
 .section__subtitle--project {
-    margin-bottom: 20px;
+    margin: 20px 0;
+}
+
+.section__text--project {
+    margin-bottom: 10px;
 }
 
 .footer {
@@ -265,4 +283,76 @@ body {
     justify-content: space-around;
     align-items: center;
     background-color: rgba(255,255,255, 0.4);
+}
+
+.hljs.javascript {
+    background: none;
+    position: absolute;
+}
+
+@media (max-width: 1000px) {
+    .header__nav {
+        display: none;
+    }
+}
+
+@media (max-width: 770px) {
+    .hljs.javascript {
+        right: 70px;
+    }
+    .project__img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 580px) {
+    .hljs.javascript {
+        right: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .hljs.javascript {
+        right: 35px;
+    }
+    .info__title {
+        font-size: 45px;
+    }
+    .section__text--code {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 460px) {
+    .hljs.javascript {
+        right: -10px;
+    }
+    .section__text--code {
+        font-size: 8px;
+    }
+    .contacts {
+        margin: 30px;
+    }
+    .section {
+        margin: 20px 50px;
+    }
+    .nav__item {
+        font-size: 30px;
+    }
+    .info__title {
+        font-size: 30px;
+    }
+    .info__subtitle {
+        font-size: 20px;
+    }
+    .persone__info {
+        margin: 30px 30px;
+    }
+    .section__icons {
+        font-size: 30px;
+    }
+    .footer__nav {
+        width: 75%;
+    }
 }
