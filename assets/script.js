@@ -1,6 +1,6 @@
 const burgerToggle = document.getElementById('navToggle');
 const nav = document.getElementById('nav');
-const burgerItem = document.querySelectorAll('#burger__item');
+const burgerItem = document.querySelectorAll('.burger__item');
 
 burgerToggle.addEventListener('click', () => {
     burgerToggle.classList.toggle('active');
