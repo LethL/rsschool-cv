@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Resume</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__title">Dmitry Goncharov / Resume</h1>
+        <ul id="nav" class="header__nav">
+            <li>
+                <a class="header__nav-item" href="#contacts">contacts</a>
+            </li>
+            <li class="header__nav-item">
+                <a class="header__nav-item" href="#education">education</a>
+            </li>
+            <li class="header__nav-item">
+                <a class="header__nav-item" href="#example">code example</a>
+            </li>
+            <li class="header__nav-item">
+                <a class="header__nav-item" href="#languages">languages</a>
+            </li>
+            <li class="header__nav-item">
+                <a class="header__nav-item" href="#skills">skills</a>
+            </li>
+            <li class="header__nav-item">
+                <a class="header__nav-item" href="#projects">projects</a>
+            </li>
+        </ul>
+        <button class="burger" type="button" id="navToggle">
+            <span class="burger__item">Menu</span>
+            <span class="burger__item">Menu</span>
+            <span class="burger__item">Menu</span>
+        </button>
+    </header>
+    <div class="main">
+        <div class="persone">
+            <div class="persone__info">
+                <img class="persone__img" src="assets/img/avatar.jpg" alt="avatar">
+                <h2 class="info__title">Dmitry Goncharov</h2>
+                <h4 class="info__subtitle">Junior Front-End Developer</h4>
+                <address class="info__address">Nizhny Novgorod, Russia</address>
+            </div>
+
+            <div class="persone__profile">
+                <h3 class="profile__title">About me</h3>
+                <p class="profile__text">I'm a student rs school now. I'm just beginner in this way. But I enjoy the
+                    learning process and I hope to become a full-stack developer in the future.
+                </p>
+                <a class="profile__link" target="_blank" href="https://youtu.be/7HEXTuvlMek">youtube self
+                    presentation</a>
+            </div>
+
+            <div id="contacts" class="contacts">
+                <h3 class="contacts__title">Contact me</h3>
+                <nav>
+                    <ul class="contacts__nav">
+                        <li class="contacts__li"><a class="nav__item" href="mailto:carribean_08@mail.ru"><i
+                                    class="fas fa-envelope"></i></a></li>
+                        <li class="contacts__li"><a class="nav__item" target="_blank" href="https://github.com/LethL"><i
+                                    class="fab fa-github"></i> </a></li>
+                        <li class="contacts__li"><a class="nav__item" target="_blank" href="https://t.me/leth44l"><i
+                                    class="fab fa-telegram"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="bio">
+            <section id="education" class="section">
+                <h2 class="section__title">educating</h2>
+                <h4 class="section__subtitle">Murom College of Radioelectronic Instrumentation</h4>
+                <h4 class="section__subtitle">Moscow Psychological and Social University</h4>
+                <h4 class="section__subtitle">Rolling Scopes School</h4>
+                <h4 class="section__subtitle">Geek brain's courses</h4>
+                <h4 class="section__subtitle">Udemy</h4>
+            </section>
+
+            <section id="example" class="section">
+                <h2 class="section__title">Code Example</h2>
+                <pre class="section__text section__text--code"><code class="hljs javascript">
+                    function createPhoneNumber(numbers) {
+                        let x = numbers.join('')
+                        return '(' + x.slice(0, 3) + ') ' 
+                        + x.slice(3, 6) + '-' 
+                        + x.slice(6, x.length)
+                    }</code>
+                </pre>
+            </section>
+
+            <section id="languages" class="section">
+                <h2 class="section__title">Languages</h2>
+                <div class="language__item">
+                    <h4 class="section__subtitle">Russian(native)</h4>
+                    <h4 class="section__subtitle">English(B1)</h4>
+                    <h4 class="section__subtitle">Spanish(elementary)</h4>
+                </div>
+            </section>
+
+            <div id="skills" class="section">
+                <h2 class="section__title">Skills</h2>
+                <ul class="section__icons">
+                    <li title="HTML" class="icons__item"><i class="fab fa-html5"></i></li>
+                    <li title="CSS" class="icons__item"><i class="fab fa-css3"></i></li>
+                    <li title="JavaScript" class="icons__item"><i class="fab fa-js-square"></i></li>
+                    <li title="GIT" class="icons__item"><i class="fab fa-github"></i></li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2 class="section__title">Hobbies & Interest</h2>
+                <ul class="section__icons">
+                    <li class="icons__item"><i class="fas fa-music"></i></li>
+                    <li class="icons__item"><i class="fas fa-video"></i></li>
+                    <li class="icons__item"><i class="far fa-futbol"></i></li>
+                    <li class="icons__item"><i class="fas fa-plane"></i></li>
+                </ul>
+            </div>
+
+            <div id="projects" class="section">
+                <h2 class="section__title">My projects</h2>
+                <div class="project">
+                    <a target="_blank" href="https://lethl.github.io/Online-zoo/online-zoo/"><img class="project__img"
+                            src="assets/img/online-zoo.png" alt="online-zoo"></a>
+                    <div class="project__info">
+                        <h5 class="section__subtitle section__subtitle--project">Online-zoo</h5>
+                        <p class="section__text section__text--project">Virtual zoo. Multi-page adaptive layout with
+                            using JavaScript. Rss school task</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <a target="_blank" href="https://lethl.github.io/wildlife/"><img class="project__img"
+                            src="assets/img/wildlife.png" alt="wildlife"></a>
+                    <div class="project__info">
+                        <h5 class="section__subtitle section__subtitle--project">Wildlife</h5>
+                        <p class="section__text section__text--project">Rss school task. Adaptive layout</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <a target="_blank" href="https://lethl.github.io/virtual-piano/"><img class="project__img"
+                            src="assets/img/virtual-piano.png" alt="virtual-piano"></a>
+                    <div class="project__info">
+                        <h5 class="section__subtitle section__subtitle--project">Virtual-piano</h5>
+                        <p class="section__text section__text--project">Rss school task. Virtal piano app.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer class="footer">
+        <a class="footer__link" target="_blank" href="https://rs.school/js/"><img class="nav__logo"
+                src="assets/img/rss_logo.svg" alt="logo"></a>
+        <nav class="footer__nav">
+            <ul class="contacts__nav">
+                <li class="section__text">2021 Dmitry Goncharov</li>
+                <li class="contacts__li"><a class="nav__item" href="mailto:carribean_08@mail.ru"><i
+                            class="fas fa-envelope"></i></a></li>
+                <li class="contacts__li"><a class="nav__item" target="_blank" href="https://github.com/LethL"><i
+                            class="fab fa-github"></i> </a></li>
+                <li class="contacts__li"><a class="nav__item" target="_blank" href="https://t.me/leth44l"><i
+                            class="fab fa-telegram"></i></a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
