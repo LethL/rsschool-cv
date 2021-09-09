@@ -137,7 +137,7 @@ body {
     max-height: 250px;
     margin: 0 auto;
     display: block;
-    border-radius: 50%;
+    border-radius: 15px;
 }
 
 .info__title {
